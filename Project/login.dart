@@ -22,19 +22,19 @@ List<String> usernames = [];
     int choice = int.parse(stdin.readLineSync()!);
 
     if (choice == 1) {
-      print("Enter username:");
+      print("Enter Username:");
       String username = stdin.readLineSync()!;
-      print("Enter password:");
+      print("Enter Password:");
       String password = stdin.readLineSync()!;
       usernames.add(username);
       passwords.add(password);
-      print("Signup successful!");
+      print("Signup Successful!");
     } 
     
     else if (choice == 2) {
-      print("Enter username:");
+      print("Enter Username:");
       String username = stdin.readLineSync()!;
-      print("Enter password:");
+      print("Enter Password:");
       String password = stdin.readLineSync()!;
       bool isAuthenticated = false;
 
@@ -50,9 +50,9 @@ List<String> usernames = [];
         
       } else {
         attempts++;
-        print("Enter valid username or password");
+        print("Enter Valid Username Or Password");
         if (attempts == 5) {
-          print("You are blocked.");
+          print("You Are Blocked.");
           break;
         }
       }
